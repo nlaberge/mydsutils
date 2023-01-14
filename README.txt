@@ -1,0 +1,1 @@
+pip install -e /Users/nicklaberge/Dropbox/Mac/Documents/Research/Tools/mydsutils
