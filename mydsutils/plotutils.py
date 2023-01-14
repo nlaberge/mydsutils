@@ -55,6 +55,7 @@ def hide_spines(ax):
 
 
 
+
 def get_rainbow_colors(num_categories):
     '''
     returns categorical colors
