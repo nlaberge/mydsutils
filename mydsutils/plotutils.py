@@ -49,7 +49,6 @@ rcParams['lines.solid_capstyle'] = 'butt'
 
 MPL_MARKERS = ['o','s','v','p','*','D','^','P','d',]
 
-
 def hide_spines(ax):
     ax.spines["right"].set_visible(False)
     ax.spines["top"].set_visible(False)
