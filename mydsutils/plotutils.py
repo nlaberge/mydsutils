@@ -62,7 +62,12 @@ def get_rainbow_colors(num_categories):
     max num categories: 10
     '''
     import palettable.cartocolors.qualitative as colors
-    return colors.get_map(f'Prism_{num_categories}').mpl_colors
+    if num_categories <= 10:
+        return colors.get_map(f'Prism_{num_categories}').mpl_colors
+    elif num_categories == 11:
+        return colors.get_map(f'Prism_{num_categories}').mpl_colors + [tuple([96/255]*3)] # add grey
+    else:
+        print('11 is max num colors. Consider fixing this function to looping back through colors')
     
 def savefig(path):
     plt.savefig(path,bbox_inches='tight')
